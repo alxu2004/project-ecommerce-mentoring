@@ -1,0 +1,61 @@
+
+.filter-bar button{
+    background-color: white;
+    border: none;
+    margin: 0 4px;
+    color: gray;
+}
+.filter-bar button.selected{
+    color: #8cc63f;
+    border-bottom: solid 2px #8cc63f;
+
+}
+.filter-bar{
+    overflow-x: auto;
+    min-height:35px;
+    white-space: nowrap;
+}
+@media(max-width:780px){
+    .content-phones{
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .filter-bar{
+        flex: 1;
+    }
+    .phones-cards{
+        flex: 1;
+    }
+}
+@media(min-width:780px){
+    .content-phones{
+        display: flex;
+        
+    }
+    .filter-bar{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .filter-bar button{
+        font-size: 20px;
+        width: 30px;
+        height: 50px;
+        transition: all;
+        transition-duration: .5s;
+    }
+    .filter-bar button:hover{
+        color: #8cc63f;
+        border-bottom: solid 4px #8cc63f;
+        width: 100px;
+    }
+    .filter-bar button.selected{
+        color: #8cc63f;
+        border-bottom: solid 4px #8cc63f;
+        width: 100px;
+    }
+    .phones-cards{
+        flex: 3;
+    }
+}
